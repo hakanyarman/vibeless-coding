@@ -4,7 +4,7 @@ class A {
         this.functionToCall = functionToCall
     }
     methodA(...params: any[]){
-        console.log(this.functionToCall(...params))
+        console.log(`Result of ${this.functionToCall.name} function with parameters: ${params} is ${this.functionToCall(...params)}`)
     }
 }
 
